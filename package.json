@@ -1,0 +1,31 @@
+{
+  "name": "foscam-snapshot-nodejs",
+  "version": "1.0.0",
+  "description": "Simple nodeJS module to extract the snapshot image from CGI snapPicture HTML and serve it on a webservice",
+  "main": "snapshot.js",
+  "scripts": {
+    "test": "node test.js",
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreatondo/foscam-snapshot-nodejs.git"
+  },
+  "keywords": [
+    "foscam",
+    "snapshot",
+    "picture",
+    "nodejs",
+    "image",
+    "html",
+    "parser"
+  ],
+  "author": "Andrea Tondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreatondo/foscam-snapshot-nodejs/issues"
+  },
+  "homepage": "https://github.com/andreatondo/foscam-snapshot-nodejs"
+}

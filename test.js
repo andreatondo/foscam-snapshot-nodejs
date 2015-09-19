@@ -1,4 +1,16 @@
-var snapshot = require('./snapshot.js');
+var Snapshot = require('./snapshot.js');
 
-// Start webservice on http://localhost:9000/snapshot
-snapshot.start('192.168.1.180', 88, 'username', 'password');
+var express = require('express');
+var rest = express();
+rest.listen(9000);
+
+// Second parameter is optional, should be used if you want to add this resource
+// to your existing express service
+var snapshotService = new Snapshot({
+  ip: '192.168.1.180',
+  username: 'username',
+  password: 'password'
+}, rest);
+
+// Adds resource /snapshot to the existing webserver at http://localhost:9000
+snapshotService.start();

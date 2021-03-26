@@ -44,7 +44,7 @@ Snapshot.prototype.start = function () {
                 var imgOptions = {
                     host: camIp,
                     port: camPort,
-                    path: regex.exec(htmlContent)[1].replace('../', '')
+                    path: regex.exec(htmlContent)[1].replace('../', '/')
                 };
 
                 var imgRequest = http.get(imgOptions, function(imgRes){

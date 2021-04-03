@@ -2,7 +2,7 @@ var Snapshot = require('./snapshot.js');
 
 var express = require('express');
 var rest = express();
-rest.listen(9040);
+rest.listen(9000);
 
 // Second parameter is optional, should be used if you want to add this resource
 // to your existing express service
